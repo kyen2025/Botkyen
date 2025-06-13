@@ -44,11 +44,11 @@ async def note(update: Update, context: ContextTypes.DEFAULT_TYPE):
     context.user_data['note'] = update.message.text
 
     text = (
-        "📩 *Nuova richiesta preventivo caldaia:*
+        "📩 *Nuova richiesta preventivo caldaia:*"
 
-"
-        f"🧱 *Piani da intubare:* {context.user_data['piani']}
-"
+
+        f"🧱 *Piani da intubare:* {context.user_data['piani']}"
+
         f"📝 *Note cliente:* {context.user_data['note']}"
     )
     await context.bot.send_message(chat_id=DESTINATARIO_ID, text=text, parse_mode="Markdown")
