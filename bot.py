@@ -13,9 +13,9 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
-        "Benvenuto nel bot per il preventivo cambio caldaia!
+        "Benvenuto nel bot per il preventivo cambio caldaia!"
 
-"
+
         "Per favore, inviami una foto della caldaia (visibili muri dx, sx e sopra)."
     )
     return PHOTO1
